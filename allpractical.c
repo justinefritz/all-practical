@@ -243,9 +243,10 @@ void guess(){
     printf("Congratulations, you guessed the number in %d guesses!", total);
 }
 void card(){
-    int guess, ran_num, total = 0, choice = 1;
+    int ran_num, choice = 1;
     srand(time(NULL));
-    while (choice >= 1 && choice != 0){
+    while (choice > 0){
+    int total = 0;
     for (int w = 1; w <= 2; w++){
         ran_num = (rand() % 13 ) + 1;
         printf("Card %d : %d\n", w, ran_num);
@@ -256,6 +257,7 @@ void card(){
             else printf("You lost!");
     printf("\nDo you still want to play?  1 = Yes  0 = No\n");
     scanf("%d", &choice);
+    system("cls");
     }
     printf("Thank you for using the program...");
 }    
@@ -297,6 +299,7 @@ void immigrants(){
         }
     printf("\nTotal ADULT are: %d, Total ADOLESCENT are: %d, Total CHILDREN are: %d\nDo you still want to accept immigrants? ", adult, adolescents, children);
     scanf("%d", &choice);
+    system("cls");
     }
     printf("Thank you for using the program...");
 }
