@@ -3,119 +3,6 @@
 #include <math.h>
 #include <time.h>
 
-void circle();
-void factorial();
-void multi();
-void summa();
-void rectangle();
-void asterisk();
-void fibo();
-void pascal();
-void bingo();
-void evenodd();
-void dice();
-void nine();
-void guess();
-void card();
-void mineral();
-void immigrants();
-
-int main(){
-    int choice;
-    printf("1. Radius\n");
-    printf("2. Factorial\n");
-    printf("3. Multiplication Table\n");
-    printf("4. Summation of Number\n");
-    printf("5. Rectangle\n");
-    printf("6. Triangle(*)\n");
-    printf("7. Fibonnaci Sequence\n");
-    printf("8. Pascal Sequence\n");
-    printf("9. Bingo\n");
-    printf("10. Even or Odd\n");
-    printf("11. Dice\n");
-    printf("12. Lucky Nine\n");
-    printf("13. Guess\n");
-    printf("14. Card\n");
-    printf("15. Mineral\n");
-    printf("16. Immigrants\n");
-    printf("17. Exit\n");
-    printf(" : ");
-    scanf("%d", &choice);
-    if(choice == 1){
-        system("cls");
-        circle();
-        }
-        else if (choice == 2){
-            system("cls");
-            factorial();
-            }
-            else if (choice == 3){
-                system("cls");
-                multi();
-                }
-                else if (choice == 4){
-                    system("cls");
-                    summa();
-                    }
-                    else if (choice == 5){
-                        system("cls");
-                        rectangle();
-                        }
-                        else if (choice == 6){
-                            system("cls");
-                            asterisk();
-                            }
-                            else if (choice == 7){
-                                system("cls");
-                                fibo();
-                                }
-                                else if (choice == 8){
-                                    system("cls");
-                                    pascal();
-                                    }
-                                    else if (choice == 9){
-                                        system("cls");
-                                        bingo();
-                                        }
-                                        else if (choice == 10){
-                                            system("cls");
-                                            evenodd();
-                                            }
-                                            else if (choice == 11){
-                                                system("cls");
-                                                dice();
-                                                }
-                                                else if (choice == 12){
-                                                    system("cls");
-                                                    nine();
-                                                    }
-                                                    else if (choice == 13){
-                                                        system("cls");
-                                                        guess();
-                                                        }
-                                                        else if (choice == 14){
-                                                            system("cls");
-                                                            card();
-                                                            }
-                                                            else if (choice == 15){
-                                                                system("cls");
-                                                                mineral();
-                                                                }
-                                                                else if (choice == 16){
-                                                                    system("cls");
-                                                                    immigrants();
-                                                                    }
-                                                                    else if (choice == 17){
-                                                                        system("cls");
-                                                                        printf("Thank you for using the program.....");
-                                                                        }
-                                                                        else{
-                                                                            system("cls");
-                                                                            printf("You've entered the wrong key\n\n");
-                                                                            main();
-                                                                            }
-}
-
 void circle(){
     float r, radius;
     printf("Enter the number : ");
@@ -511,4 +398,100 @@ void immigrants(){
             system("cls");
         }
     }
+}
+
+int main(){
+    int choice;
+    printf("1. Radius\n");
+    printf("2. Factorial\n");
+    printf("3. Multiplication Table\n");
+    printf("4. Summation of Number\n");
+    printf("5. Rectangle\n");
+    printf("6. Triangle(*)\n");
+    printf("7. Fibonnaci Sequence\n");
+    printf("8. Pascal Sequence\n");
+    printf("9. Bingo\n");
+    printf("10. Even or Odd\n");
+    printf("11. Dice\n");
+    printf("12. Lucky Nine\n");
+    printf("13. Guess\n");
+    printf("14. Card\n");
+    printf("15. Mineral\n");
+    printf("16. Immigrants\n");
+    printf("17. Exit\n");
+    printf(" : ");
+    scanf("%d", &choice);
+    if(choice == 1){
+        system("cls");
+        circle();
+        }
+        else if (choice == 2){
+            system("cls");
+            factorial();
+            }
+            else if (choice == 3){
+                system("cls");
+                multi();
+                }
+                else if (choice == 4){
+                    system("cls");
+                    summa();
+                    }
+                    else if (choice == 5){
+                        system("cls");
+                        rectangle();
+                        }
+                        else if (choice == 6){
+                            system("cls");
+                            asterisk();
+                            }
+                            else if (choice == 7){
+                                system("cls");
+                                fibo();
+                                }
+                                else if (choice == 8){
+                                    system("cls");
+                                    pascal();
+                                    }
+                                    else if (choice == 9){
+                                        system("cls");
+                                        bingo();
+                                        }
+                                        else if (choice == 10){
+                                            system("cls");
+                                            evenodd();
+                                            }
+                                            else if (choice == 11){
+                                                system("cls");
+                                                dice();
+                                                }
+                                                else if (choice == 12){
+                                                    system("cls");
+                                                    nine();
+                                                    }
+                                                    else if (choice == 13){
+                                                        system("cls");
+                                                        guess();
+                                                        }
+                                                        else if (choice == 14){
+                                                            system("cls");
+                                                            card();
+                                                            }
+                                                            else if (choice == 15){
+                                                                system("cls");
+                                                                mineral();
+                                                                }
+                                                                else if (choice == 16){
+                                                                    system("cls");
+                                                                    immigrants();
+                                                                    }
+                                                                    else if (choice == 17){
+                                                                        system("cls");
+                                                                        printf("Thank you for using the program.....");
+                                                                        }
+                                                                        else{
+                                                                            system("cls");
+                                                                            printf("You've entered the wrong key\n\n");
+                                                                            main();
+                                                                            }
 }
